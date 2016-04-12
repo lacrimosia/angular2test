@@ -9,7 +9,7 @@ import {listComponent} from './list.component';
     templateUrl: 'app.component.html'
 })
 export class AppComponent { 
-
+	todoModel: string;
 	// access services
 	// make public coolService to be accessible in methods
 	constructor(public coolService: coolService){
