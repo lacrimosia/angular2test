@@ -1,0 +1,12 @@
+<h2>Names</h2>
+<ul>
+    		<li *ngFor="#name of names" (click)="changeNames(name.name)" class="to">{{ name.name}}</li>
+
+</ul>
+<form (submit)="onSubmit()">
+	<input type="text" [(ngModel)]="todoModel">
+</form>
+
+<button (click)="onSubmit()">Click</button>
+<navigation></navigation>
+<list></list>
